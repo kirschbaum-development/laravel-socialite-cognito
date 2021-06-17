@@ -12,17 +12,15 @@ class SocialiteCognitoProvider extends AbstractProvider
      * @var string[]
      */
     protected $scopes = [
-        'openid profile aws',
-        'cognito',
-        'signin',
-        'user',
-        'admin',
+        'openid',
+        'profile',
+        'aws.cognito.signin.user.admin',
     ];
 
     /**
      * @var string
      */
-    protected $scopeSeparator = '.';
+    protected $scopeSeparator = ' ';
 
     /**
      * @return string
