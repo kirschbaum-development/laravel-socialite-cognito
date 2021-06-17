@@ -33,6 +33,16 @@ Then, you can use the driver as you would use it in the Laravel Socialite's offi
 $user = Socialite::driver('cognito')->user();
 ```
 
+The default scopes are:
+```php
+$scopes = [
+    'openid',
+    'profile',
+    'aws.cognito.signin.user.admin',
+];
+```
+You can add more scopes or override the default ones by using `scopes` or `setScopes` methods like the official documentation shows ([link](https://laravel.com/docs/8.x/socialite#access-scopes))
+
 ## Testing
 
 ```bash
