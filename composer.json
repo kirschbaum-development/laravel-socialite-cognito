@@ -1,0 +1,37 @@
+{
+    "name": "kirschbaum-development/laravel-socialite-cognito",
+    "description": "A custom AWS Cognito driver for Laravel Socialite",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luis Güette",
+            "email": "guette@kirschbaumdevelopment.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "KirschbaumDevelopment\\SocialiteCognito\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KirschbaumDevelopment\\SocialiteCognito\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^7.3",
+        "laravel/socialite": "^5.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^6.18"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KirschbaumDevelopment\\SocialiteCognito\\SocialiteCognitoServiceProvider"
+            ]
+        }
+    }
+}
